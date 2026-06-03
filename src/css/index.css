@@ -4,6 +4,10 @@
   place-items: center;
 }
 
-ul {
+#header ul {
   list-style: none;
+}
+
+body {
+  background: linear-gradient(135deg, #0d0d0f, #1a1a2e);
 }
