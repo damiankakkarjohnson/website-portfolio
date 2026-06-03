@@ -1,13 +1,68 @@
 
-#header {
-  display: grid;
-  place-items: center;
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Regular.ttf') format('truetype');
 }
 
-#header ul {
-  list-style: none;
+/*------------------------------------------- NavBar Styles -------------------------------------------*/
+
+#mainNav {
+  background: rgba(0, 0, 0, 0.4);
+  top: 0;
+  width: 100%;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+#mainNav ul {
+  list-style: none;
+  display: flex;
+  gap: 2vw;
+  padding: 0.5vw 2vw;
+}
+
+#mainNav ul a {
+  font-family: 'Raleway', sans-serif;
+  color: #e8eaf0;
+  font-size: 1vw;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  padding: 0.1vw 0.2vw;
+}
+
+#mainNav ul a:hover {
+  color: #7eb8d4;
+  transition: color 0.2s;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  padding: 0.1vw 0.2vw;
+}
+
+#myNameNav {
+  font-family: 'Raleway', sans-serif;
+  color: #e8eaf0;
+  font-size: 1.5vw;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  padding: 0.1vw 0.2vw;
+  margin-left: 0.5vw
+}
+
+#myNameNav span {
+  color: #7eb8d4;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------- Background Styles -----------------------------------------*/
 
 body {
-  background: linear-gradient(135deg, #0d0d0f, #1a1a2e);
+  margin: 0;
+  background: radial-gradient(circle at 70% 30%, #1a1a2e, #0d0d0f);
 }
+
+/*-----------------------------------------------------------------------------------------------------*/
