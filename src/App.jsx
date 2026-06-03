@@ -1,10 +1,10 @@
-import Header from './Header.jsx'
+import NavBar from './NavBar.jsx'
 
 function App() {
 
   return(
     <>
-      <Header/>
+      <NavBar/>
     </>
   );
 }
