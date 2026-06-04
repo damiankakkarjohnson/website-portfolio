@@ -120,7 +120,6 @@ body {
 #introText p {
   color: #a0a8b8;
   width: 60vh;
-  text-align: justify;
   font-size: clamp(12px, 1.2vw, 18px);
 }
 
