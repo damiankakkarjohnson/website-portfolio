@@ -15,10 +15,7 @@
 body {
   margin: 0;
   background-color: #0d0d0f;
-  background-image: 
-    radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px),
-    radial-gradient(circle at 70% 30%, #1a1a2e, #0d0d0f);
-  background-size: 30px 30px, cover;
+  background-image: radial-gradient(circle at 70% 30%, #1a1a2e, #0d0d0f);
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
@@ -140,6 +137,8 @@ body {
   padding: 5vw 8vw;
   gap: 4vw;
   min-height: calc(80vh - var(--navbar-height));
+  background-image: radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
+  background-size: 30px 30px, cover;
 }
 
 #introText {
@@ -222,6 +221,16 @@ body {
   #introText h2 {
     font-size: clamp(32px, 8vw, 60px);
   }
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------- Experience Styles -----------------------------------------*/
+
+#experience {
+  color: #e8eaf0;
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
