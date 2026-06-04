@@ -10,6 +10,21 @@
 
 
 
+/*----------------------------------------- Background Styles -----------------------------------------*/
+
+body {
+  margin: 0;
+  background-color: #0d0d0f;
+  background-image: 
+    radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px),
+    radial-gradient(circle at 70% 30%, #1a1a2e, #0d0d0f);
+  background-size: 30px 30px, cover;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+
 /*------------------------------------------- NavBar Styles -------------------------------------------*/
 
 :root {
@@ -20,6 +35,7 @@
   padding-top: var(--navbar-height);
 }
 
+
 #mainNav {
   background: rgba(0, 0, 0, 0.4);
   top: 0;
@@ -29,6 +45,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  backdrop-filter: blur(10px);
 }
 
 #mainNav ul {
@@ -41,7 +58,7 @@
 #mainNav ul a {
   font-family: 'Raleway', sans-serif;
   color: #e8eaf0;
-  font-size: 1vw;
+  font-size: clamp(10px, 1vw, 16px);
   letter-spacing: 0.1em;
   text-decoration: none;
   padding: 0.1vw 0.2vw;
@@ -58,11 +75,11 @@
 #myNameNav {
   font-family: 'Raleway', sans-serif;
   color: #e8eaf0;
-  font-size: 1.5vw;
+  font-size: clamp(14px, 1.5vw, 22px);
   letter-spacing: 0.1em;
   text-decoration: none;
   padding: 0.1vw 0.2vw;
-  margin-left: 0.5vw
+  margin-left: 0.5vw;
 }
 
 #myNameNav span {
@@ -73,11 +90,76 @@
 
 
 
-/*----------------------------------------- Background Styles -----------------------------------------*/
+/*---------------------------------------- Introduction Styles ----------------------------------------*/
 
-body {
+#intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vw 8vw;
+  gap: 4vw;
+  min-height: calc(80vh - var(--navbar-height));
+}
+
+#introText {
+  color: #e8eaf0;
+}
+
+#introText h2 {
+  font-size: clamp(32px, 10vh, 80px);
   margin: 0;
-  background: radial-gradient(circle at 70% 30%, #1a1a2e, #0d0d0f);
+}
+
+#introText h3 {
+  color: #808080;
+  font-size: clamp(14px, 1.5vw, 20px);
+  margin-bottom: 3vh;
+  margin-top: 0;
+}
+
+#introText p {
+  color: #a0a8b8;
+  width: 60vh;
+  text-align: justify;
+  font-size: clamp(12px, 1.2vw, 18px);
+}
+
+#myNameIntro {
+  color: #7eb8d4;
+  display: block;
+}
+
+#introImg {
+  flex-shrink: 0;
+}
+
+#introImg ul {
+  list-style: none;
+  display: flex;
+  gap: 2vw;
+  padding: 0.5vw 2vw;
+  justify-content: center;
+}
+
+#introImg ul a {
+  font-family: 'Raleway', sans-serif;
+  color: #e8eaf0;
+  font-size: clamp(14px, 1.2vw, 22px);
+  padding: 0.2vw;
+}
+
+#introImg ul a:hover {
+  color: #7eb8d4;
+  transition: color 0.2s, background 0.2s;;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+}
+
+#introImg img {
+  width: 20vw;
+  height: 20vw;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
