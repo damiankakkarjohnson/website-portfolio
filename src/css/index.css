@@ -162,4 +162,25 @@ body {
   border-radius: 50%;
 }
 
+@media (max-width: 768px) {
+  #intro {
+    flex-direction: column;
+    text-align: center;
+    padding: 8vw;
+  }
+
+  #introImg img {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  #introText p {
+    width: 100%;
+  }
+
+  #introText h2 {
+    font-size: clamp(32px, 8vw, 60px);
+  }
+}
+
 /*-----------------------------------------------------------------------------------------------------*/
