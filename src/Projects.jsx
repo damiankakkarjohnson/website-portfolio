@@ -37,6 +37,7 @@ function Projects() {
                         <li>Express.js</li>
                         <li>HTML/CSS</li>
                         <li>MongoDB</li>
+                        <li>REST APIs</li>
                     </ul>
                 </div>
 

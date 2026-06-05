@@ -10,7 +10,7 @@ function Experience() {
             <div className="entries">
                 <div className="card">
                     <h3>Co-Founder</h3>
-                    <h4 className="experienceCompany">AISSLO LLC <span><a href="https://www.aisslo.com/" target="_blank" rel="noreferrer"><FaGlobe/></a></span></h4>
+                    <h4 className="cardCompany">AISSLO LLC <span><a href="https://www.aisslo.com/" target="_blank" rel="noreferrer"><FaGlobe/></a></span></h4>
                     <p className="timeTag">October 2025 - Present</p>
                     <br/>
                     <ul>
@@ -22,7 +22,7 @@ function Experience() {
 
                 <div className="card">
                     <h3>Crew Member</h3>
-                    <h4 className="experienceCompany">CHIPOTLE MEXICAN GRILL <span><a href="https://www.chipotle.ca/" target="_blank" rel="noreferrer"><FaGlobe/></a></span></h4>
+                    <h4 className="cardCompany">CHIPOTLE MEXICAN GRILL <span><a href="https://www.chipotle.ca/" target="_blank" rel="noreferrer"><FaGlobe/></a></span></h4>
                     <p className="timeTag">June 2025 - December 2025</p>
                     <br/>
                     <ul>
@@ -33,7 +33,7 @@ function Experience() {
 
                 <div className="card">
                     <h3>Meeting Room Assistant</h3>
-                    <h4 className="experienceCompany">RAMADA BY WYNDHAM <span><a href="https://www.ramadaottawa.com/" target="_blank" rel="noreferrer"><FaGlobe/></a></span></h4>
+                    <h4 className="cardCompany">RAMADA BY WYNDHAM <span><a href="https://www.ramadaottawa.com/" target="_blank" rel="noreferrer"><FaGlobe/></a></span></h4>
                     <p className="timeTag">April 2023 - January 2024</p>
                     <br/>
                     <ul>

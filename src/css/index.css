@@ -291,10 +291,11 @@ body {
 
 
 
-/*------------------------------------ Experience & Project Styles ------------------------------------*/
+/*---------------------------- Experience, Projects, and Leadership Styles ----------------------------*/
 
 #experience,
-#projects {
+#projects,
+#leadership {
   font-family: 'Raleway', sans-serif;
   color: #e8eaf0;
   padding-left: clamp(5vw, 10vw, 20vw);
@@ -302,14 +303,16 @@ body {
 }
 
 #experience h2,
-#projects h2 {
+#projects h2,
+#leadership h2 {
   position: relative;
   display: inline-block;
   font-size: clamp(28px, 4vw, 30px);
 }
 
 #experience h2::after,
-#projects h2::after {
+#projects h2::after,
+#leadership h2::after {
   content: '';
   position: absolute;
   bottom: -10px;
@@ -318,27 +321,30 @@ body {
   background: #7eb8d4;
 }
 
-#experience h2::after { width: 22%; }
+#experience h2::after,
+#leadership h2::after { width: 22%; }
 #projects h2::after { width: 28%; }
 
-#experience h3 {
+#experience h3,
+#leadership h3 {
   font-size: clamp(28px, 4vw, 30px);
   margin-bottom: 0;
 }
 
-#experience h4 {
+#experience h4,
+#leadership h4 {
   font-size: clamp(14px, 1.5vw, 16px);
   margin-top: 10px;
   margin-bottom: 0;
   color: #7eb8d4;
 }
 
-.experienceCompany {
+.cardCompany {
   display: flex;
   justify-content: space-between;
 }
 
-.experienceCompany a {
+.cardCompany a {
   display: flex;
   font-size: clamp(20px, 3vw, 22px);
   color: #7eb8d4;
@@ -347,7 +353,7 @@ body {
   z-index: 900;
 }
 
-.experienceCompany a:hover {
+.cardCompany a:hover {
   color: #e8eaf0;
 }
 
