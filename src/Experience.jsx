@@ -7,11 +7,11 @@ function Experience() {
             <h2>Experience</h2>
 
             <br/>
-            <div id="experienceEntries">
-                <div className="experienceEntry">
+            <div className="entries">
+                <div className="card">
                     <h3>Co-Founder</h3>
-                    <h4 className="experienceCompany">AISSLO LLC <span><a href="https://www.aisslo.com/" target="_blank" rel="noreferrer"><FaGlobe/></a></span></h4>
-                    <p className="experienceTime">October 2025 - Present</p>
+                    <h4 className="cardCompany">AISSLO LLC <span><a href="https://www.aisslo.com/" target="_blank" rel="noreferrer"><FaGlobe/></a></span></h4>
+                    <p className="timeTag">October 2025 - Present</p>
                     <br/>
                     <ul>
                         <li>Shape core features for an SSL certificate management dashboard</li>
@@ -20,10 +20,10 @@ function Experience() {
                     </ul>
                 </div>
 
-                <div className="experienceEntry">
+                <div className="card">
                     <h3>Crew Member</h3>
-                    <h4 className="experienceCompany">CHIPOTLE MEXICAN GRILL <span><a href="https://www.chipotle.ca/" target="_blank" rel="noreferrer"><FaGlobe/></a></span></h4>
-                    <p className="experienceTime">June 2025 - December 2025</p>
+                    <h4 className="cardCompany">CHIPOTLE MEXICAN GRILL <span><a href="https://www.chipotle.ca/" target="_blank" rel="noreferrer"><FaGlobe/></a></span></h4>
+                    <p className="timeTag">June 2025 - December 2025</p>
                     <br/>
                     <ul>
                         <li>Delivered efficient customer service in a fast-paced environment while maintaining accuracy under pressure</li>
@@ -31,10 +31,10 @@ function Experience() {
                     </ul>
                 </div>
 
-                <div className="experienceEntry">
+                <div className="card">
                     <h3>Meeting Room Assistant</h3>
-                    <h4 className="experienceCompany">RAMADA BY WYNDHAM <span><a href="https://www.ramadaottawa.com/" target="_blank" rel="noreferrer"><FaGlobe/></a></span></h4>
-                    <p className="experienceTime">April 2023 - January 2024</p>
+                    <h4 className="cardCompany">RAMADA BY WYNDHAM <span><a href="https://www.ramadaottawa.com/" target="_blank" rel="noreferrer"><FaGlobe/></a></span></h4>
+                    <p className="timeTag">April 2023 - January 2024</p>
                     <br/>
                     <ul>
                         <li>Set up meeting rooms accurately and on schedule for a variety of bookings</li>
