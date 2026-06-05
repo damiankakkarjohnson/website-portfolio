@@ -131,6 +131,7 @@ body {
 /*---------------------------------------- Introduction Styles ----------------------------------------*/
 
 #intro {
+  font-family: 'Raleway', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,7 +182,6 @@ body {
 }
 
 #introImg ul a {
-  font-family: 'Raleway', sans-serif;
   color: #e8eaf0;
   font-size: clamp(14px, 1.2vw, 22px);
   padding: 0.2vw;
@@ -230,7 +230,71 @@ body {
 /*----------------------------------------- Experience Styles -----------------------------------------*/
 
 #experience {
+  font-family: 'Raleway', sans-serif;
   color: #e8eaf0;
+  padding-left: clamp(5vw, 10vw, 20vw);
+  padding-top: clamp(1vw, 3vw, 5vw);
+}
+
+#experience h2 {
+  position: relative;
+  display: inline-block;
+  font-size: clamp(28px, 4vw, 30px);
+}
+
+#experience h3 {
+  font-size: clamp(28px, 4vw, 30px);
+  margin-bottom: 0;
+}
+
+#experience h4 {
+  font-size: clamp(22px, 2vw, 24px);
+  margin-top: 8px;
+  margin-bottom: 0;
+  color: #7eb8d4;
+}
+
+#experience h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 25%;
+  height: 2px;
+  background: #7eb8d4;
+}
+
+.experienceTime {
+  font-size: clamp(10px, 1vw, 12px);
+  margin-top: 12px;
+  color: #a0a8b8;
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 5px 5px;
+  border-color: #a0a8b8;
+}
+
+.experienceEntry {
+  display: inline-block;
+  padding: 5px 5px;
+  width: 33%;
+  border: 3px solid transparent;
+  border-radius: 10px;
+}
+
+.experienceEntry:hover{
+  border: 3px solid rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  border-color: #a0a8b8;
+}
+
+#experienceEntries {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1vw;
+  padding: 3vw 0;
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
