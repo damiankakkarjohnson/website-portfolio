@@ -1,5 +1,6 @@
 import NavBar from './NavBar.jsx'
 import Intro from './Intro.jsx'
+import Experience from './Experience.jsx';
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <NavBar/>
       <Intro/>
+      <Experience/>
     </>
   );
 }

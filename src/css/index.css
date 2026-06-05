@@ -15,10 +15,7 @@
 body {
   margin: 0;
   background-color: #0d0d0f;
-  background-image: 
-    radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px),
-    radial-gradient(circle at 70% 30%, #1a1a2e, #0d0d0f);
-  background-size: 30px 30px, cover;
+  background-image: radial-gradient(circle at 70% 30%, #1a1a2e, #0d0d0f);
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
@@ -134,12 +131,15 @@ body {
 /*---------------------------------------- Introduction Styles ----------------------------------------*/
 
 #intro {
+  font-family: 'Raleway', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5vw 8vw;
   gap: 4vw;
   min-height: calc(80vh - var(--navbar-height));
+  background-image: radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
+  background-size: 30px 30px, cover;
 }
 
 #introText {
@@ -182,7 +182,6 @@ body {
 }
 
 #introImg ul a {
-  font-family: 'Raleway', sans-serif;
   color: #e8eaf0;
   font-size: clamp(14px, 1.2vw, 22px);
   padding: 0.2vw;
@@ -221,6 +220,106 @@ body {
 
   #introText h2 {
     font-size: clamp(32px, 8vw, 60px);
+  }
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------- Experience Styles -----------------------------------------*/
+
+#experience {
+  font-family: 'Raleway', sans-serif;
+  color: #e8eaf0;
+  padding-left: clamp(5vw, 10vw, 20vw);
+  padding-top: clamp(1vw, 3vw, 5vw);
+}
+
+#experience h2 {
+  position: relative;
+  display: inline-block;
+  font-size: clamp(28px, 4vw, 30px);
+}
+
+#experience h3 {
+  font-size: clamp(28px, 4vw, 30px);
+  margin-bottom: 0;
+}
+
+#experience h4 {
+  font-size: clamp(14px, 1.5vw, 16px);
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #7eb8d4;
+}
+
+#experience h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 22%;
+  height: 3px;
+  background: #7eb8d4;
+}
+
+.experienceTime {
+  font-size: clamp(10px, 1vw, 12px);
+  margin-top: 12px;
+  color: #a0a8b8;
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 5px 5px;
+  border-color: #a0a8b8;
+}
+
+.experienceEntry {
+  display: inline-block;
+  padding: 1.5rem;
+  width: 33%;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.02)
+}
+
+.experienceEntry::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  border: 2px solid rgba(126, 184, 212, 0.1);
+  background: rgba(126, 184, 212, 0.05);
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 0.4s ease;
+}
+
+.experienceEntry:hover::before {
+  clip-path: inset(0 0% 0 0);
+}
+
+.experienceEntry ul {
+  list-style: circle;
+}
+
+.experienceEntry li {
+  margin-bottom: 8px;
+  color: #a0a8b8;
+}
+
+#experienceEntries {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1vw;
+  padding: 3vw 0;
+}
+
+@media (max-width: 768px) {
+  .experienceEntry {
+    width: 80%;
   }
 }
 

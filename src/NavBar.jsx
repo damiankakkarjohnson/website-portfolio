@@ -16,7 +16,7 @@ function NavBar(){
 
       <ul id={isOpen ? 'navOpen' : 'navClosed'}>
         <li><a href="#" onClick={() => setIsOpen(!isOpen)}>About</a></li>
-        <li><a href="#" onClick={() => setIsOpen(!isOpen)}>Experience</a></li>
+        <li><a href="#experience" onClick={() => setIsOpen(!isOpen)}>Experience</a></li>
         <li><a href="#" onClick={() => setIsOpen(!isOpen)}>Projects</a></li>
         <li><a href="#" onClick={() => setIsOpen(!isOpen)}>Leadership</a></li>
         <li id="navIcons">
