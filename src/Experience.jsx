@@ -1,3 +1,4 @@
+import { FaGlobe } from "react-icons/fa";
 
 function Experience() {
     
@@ -9,7 +10,7 @@ function Experience() {
             <div id="experienceEntries">
                 <div className="experienceEntry">
                     <h3>Co-Founder</h3>
-                    <h4>AISSLO LLC</h4>
+                    <h4 className="experienceCompany">AISSLO LLC <span><a href="https://www.aisslo.com/" target="_blank" rel="noreferrer"><FaGlobe/></a></span></h4>
                     <p className="experienceTime">October 2025 - Present</p>
                     <br/>
                     <ul>
@@ -21,7 +22,7 @@ function Experience() {
 
                 <div className="experienceEntry">
                     <h3>Crew Member</h3>
-                    <h4>CHIPOTLE MEXICAN GRILL</h4>
+                    <h4 className="experienceCompany">CHIPOTLE MEXICAN GRILL <span><a href="https://www.chipotle.ca/" target="_blank" rel="noreferrer"><FaGlobe/></a></span></h4>
                     <p className="experienceTime">June 2025 - December 2025</p>
                     <br/>
                     <ul>
@@ -32,7 +33,7 @@ function Experience() {
 
                 <div className="experienceEntry">
                     <h3>Meeting Room Assistant</h3>
-                    <h4>RAMADA BY WYNDHAM</h4>
+                    <h4 className="experienceCompany">RAMADA BY WYNDHAM <span><a href="https://www.ramadaottawa.com/" target="_blank" rel="noreferrer"><FaGlobe/></a></span></h4>
                     <p className="experienceTime">April 2023 - January 2024</p>
                     <br/>
                     <ul>
