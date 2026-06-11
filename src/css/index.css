@@ -166,10 +166,7 @@ body {
 
 #myNameIntro {
   color: #7eb8d4;
-}
-
-#myNameIntro + .typed-cursor {
-  color: #7eb8d4;
+  display: block;
 }
 
 #introImg {
