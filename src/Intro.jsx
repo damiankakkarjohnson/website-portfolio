@@ -1,7 +1,38 @@
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
+import Typed from 'typed.js'
+import { useEffect, useRef } from 'react'
 
 function Intro(){
+    const firstRef = useRef(null);
+    const lastRef = useRef(null);
+
+    useEffect(() => {
+        let typedLast = null;
+
+        const typedFirst = new Typed(firstRef.current, {
+            strings: ['Damian'],
+            typeSpeed: 80,
+            showCursor: true,
+            cursorChar: '|',
+            onComplete: (self) => {
+                self.cursor.remove();
+                typedLast = new Typed(lastRef.current, {
+                    strings: ['Kakkar-Johnson'],
+                    typeSpeed: 80,
+                    showCursor: true,
+                    cursorChar: '|',
+                    loop: false,
+                });
+            }
+        });
+
+        return () => {
+            typedFirst.destroy();
+            if (typedLast) typedLast.destroy();
+        };
+    }, []);
+
     return(
         <div id="intro">
             <div id="introImg">
@@ -14,7 +45,11 @@ function Intro(){
             </div>
 
             <div id="introText">
-                <h2>Damian <span id="myNameIntro">Kakkar-Johnson</span></h2>
+                <h2>
+                    <span ref={firstRef}></span>
+                    <br/>
+                    <span id="myNameIntro" ref={lastRef}></span>
+                </h2>
                 <h3>Computer Science Student from Ottawa, Ontario, Canada!</h3>
                 <p>
                 I'm studying Computer Science at Carleton University, specializing in Artificial Intelligence and Machine Learning, and I'm on track to graduate in 2029.

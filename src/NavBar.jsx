@@ -15,7 +15,7 @@ function NavBar(){
       </button>
 
       <ul id={isOpen ? 'navOpen' : 'navClosed'}>
-        <li><a href="#intro" onClick={() => setIsOpen(!isOpen)}>About</a></li>
+        <li><a href="#" onClick={() => setIsOpen(!isOpen)}>About</a></li>
         <li><a href="#experience" onClick={() => setIsOpen(!isOpen)}>Experience</a></li>
         <li><a href="#projects" onClick={() => setIsOpen(!isOpen)}>Projects</a></li>
         <li><a href="#leadership" onClick={() => setIsOpen(!isOpen)}>Leadership</a></li>

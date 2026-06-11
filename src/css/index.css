@@ -166,7 +166,10 @@ body {
 
 #myNameIntro {
   color: #7eb8d4;
-  display: block;
+}
+
+#myNameIntro + .typed-cursor {
+  color: #7eb8d4;
 }
 
 #introImg {
@@ -263,6 +266,24 @@ body {
   color: #a0a8b8;
 }
 
+.cardCompany {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardCompany a {
+  display: flex;
+  font-size: clamp(20px, 3vw, 22px);
+  color: #7eb8d4;
+  text-decoration: none;
+  position: relative;
+  z-index: 900;
+}
+
+.cardCompany a:hover {
+  color: #e8eaf0;
+}
+
 .timeTag {
   font-size: clamp(10px, 1vw, 12px);
   margin-top: 12px;
@@ -337,24 +358,6 @@ body {
   margin-top: 10px;
   margin-bottom: 0;
   color: #7eb8d4;
-}
-
-.cardCompany {
-  display: flex;
-  justify-content: space-between;
-}
-
-.cardCompany a {
-  display: flex;
-  font-size: clamp(20px, 3vw, 22px);
-  color: #7eb8d4;
-  text-decoration: none;
-  position: relative;
-  z-index: 900;
-}
-
-.cardCompany a:hover {
-  color: #e8eaf0;
 }
 
 #projects h3 {
