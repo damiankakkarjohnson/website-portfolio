@@ -4,33 +4,23 @@ import Typed from 'typed.js'
 import { useEffect, useRef } from 'react'
 
 function Intro(){
-    const firstRef = useRef(null);
-    const lastRef = useRef(null);
+    const titleRef = useRef(null);
 
     useEffect(() => {
-        let typedLast = null;
-
-        const typedFirst = new Typed(firstRef.current, {
-            strings: ['Damian'],
-            typeSpeed: 80,
+        const typed = new Typed(titleRef.current, {
+            strings: [
+                'Computer Science Student from Ottawa, Ontario, Canada!',
+                'Co-Founder at Aisslo LLC',
+            ],
+            typeSpeed: 40,
+            backSpeed: 30,
+            backDelay: 2000,
+            loop: true,
             showCursor: true,
             cursorChar: '|',
-            onComplete: (self) => {
-                self.cursor.remove();
-                typedLast = new Typed(lastRef.current, {
-                    strings: ['Kakkar-Johnson'],
-                    typeSpeed: 80,
-                    showCursor: true,
-                    cursorChar: '|',
-                    loop: false,
-                });
-            }
         });
 
-        return () => {
-            typedFirst.destroy();
-            if (typedLast) typedLast.destroy();
-        };
+        return () => typed.destroy();
     }, []);
 
     return(
@@ -45,12 +35,8 @@ function Intro(){
             </div>
 
             <div id="introText">
-                <h2>
-                    <span ref={firstRef}></span>
-                    <br/>
-                    <span id="myNameIntro" ref={lastRef}></span>
-                </h2>
-                <h3>Computer Science Student from Ottawa, Ontario, Canada!</h3>
+                <h2>Damian <span id="myNameIntro">Kakkar-Johnson</span></h2>
+                <h3><span ref={titleRef}></span></h3>
                 <p>
                 I'm studying Computer Science at Carleton University, specializing in Artificial Intelligence and Machine Learning, and I'm on track to graduate in 2029.
                 I love to build things, whether that's co-founding a startup, building a Chrome extension, or simulating a cellular network from scratch in C. 
