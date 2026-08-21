@@ -10,7 +10,7 @@ function Projects() {
             <div className="entries">
                 <div className="card">
                     <h3>Spreadsheet Analyzer Chrome Extension</h3>
-                    <p className="timeTag">May 2026 - Present</p>
+                    <p className="timeTag">August 2026 - Present</p>
                     <br/>
                     <ul>
                         <li>Building a Chrome extension that connects with Google Sheets to help users analyze data and uncover meaningful insights</li>
