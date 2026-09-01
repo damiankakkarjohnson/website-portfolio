@@ -9,6 +9,16 @@ function Experience() {
             <br/>
             <div className="entries">
                 <div className="card">
+                    <h3>ERP Developer & Integration Support Co-op</h3>
+                    <h4 className="cardCompany">All-Equip Repair & Service <span><a href="https://allequiprepair.ca/" target="_blank" rel="noreferrer"><FaGlobe/></a></span></h4>
+                    <p className="timeTag">September 2026 - Present</p>
+                    <br/>
+                    <ul>
+                        <li>Supporting ERP development and data integration across software systems</li>
+                    </ul>
+                </div>
+                
+                <div className="card">
                     <h3>Co-Founder</h3>
                     <h4 className="cardCompany">AISSLO LLC <span><a href="https://www.aisslo.com/" target="_blank" rel="noreferrer"><FaGlobe/></a></span></h4>
                     <p className="timeTag">October 2025 - Present</p>
