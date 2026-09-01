@@ -15,6 +15,7 @@ function Experience() {
                     <br/>
                     <ul>
                         <li>Supporting ERP development and data integration across software systems</li>
+                        <li>Acting as the on-site point of contact for ERP users, gathering feedback to improve user experience</li>
                     </ul>
                 </div>
                 
