@@ -9,8 +9,8 @@ function Experience() {
             <br/>
             <div className="entries">
                 <div className="card">
-                    <h3>ERP Developer & Integration Support Co-op</h3>
-                    <h4 className="cardCompany">All-Equip Repair & Service <span><a href="https://allequiprepair.ca/" target="_blank" rel="noreferrer"><FaGlobe/></a></span></h4>
+                    <h3>ERP Developer Co-op</h3>
+                    <h4 className="cardCompany">All-Equip Repair &amp; Service <span><a href="https://allequiprepair.ca/" target="_blank" rel="noreferrer"><FaGlobe/></a></span></h4>
                     <p className="timeTag">September 2026 - Present</p>
                     <br/>
                     <ul>
